@@ -46,10 +46,31 @@
     
     //For each cell, gets the corresponding player and assing its name and game to title and subtitle
     Player *player = (self.players)[indexPath.row];
-    cell.textLabel.text = player.name;
-    cell.detailTextLabel.text = player.game;
-    //Returns the cell
+    //Sets de name label with the player's name
+    UILabel *nameLabel = (UILabel*) [cell viewWithTag:100];
+    nameLabel.text = player.name;
+    //Sets de game label with the player's game
+    UILabel *gameLabel = (UILabel*) [cell viewWithTag:101];
+    gameLabel.text = player.game;
+    //Sets a image correspondent to the player's rating
+    UIImageView *ratingImageView = (UIImageView*) [cell viewWithTag:102];
+    ratingImageView.image = [self imageForRating:player.rating];
+    
     return cell;
+}
+
+
+- (UIImage *)imageForRating:(int)rating{
+
+    switch(rating){
+        case 1: return [UIImage imageNamed:@"1StarSmall"];
+        case 2: return [UIImage imageNamed:@"2StarsSmall"];
+        case 3: return [UIImage imageNamed:@"3StarsSmall"];
+        case 4: return [UIImage imageNamed:@"4StarsSmall"];
+        case 5: return [UIImage imageNamed:@"5StarsSmall"];
+    
+    }
+    return nil;
 }
 
 
