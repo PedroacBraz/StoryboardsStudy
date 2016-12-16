@@ -6,14 +6,13 @@
 //  Copyright © 2016 Mac Mini Beta. All rights reserved.
 //
 
-#import "PlayersViewControllerTableViewController.h"
+#import "PlayersViewController.h"
 
-@interface PlayersViewControllerTableViewController ()
+@interface PlayersViewController ()
 
 @end
 
-@implementation PlayersViewControllerTableViewController
-
+@implementation PlayersViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
     

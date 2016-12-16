@@ -39,7 +39,8 @@
 		F4C904351E0448A70022084A /* Gestures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9041D1E0448A70022084A /* Gestures@2x.png */; };
 		F4C904361E0448A70022084A /* Players.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9041E1E0448A70022084A /* Players.png */; };
 		F4C904371E0448A70022084A /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9041F1E0448A70022084A /* Players@2x.png */; };
-		F4C9043A1E044C200022084A /* PlayersViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C904391E044C200022084A /* PlayersViewControllerTableViewController.m */; };
+		F4C9043A1E044C200022084A /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C904391E044C200022084A /* PlayersViewController.m */; };
+		F4C904401E044E1C0022084A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C9043F1E044E1C0022084A /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +101,10 @@
 		F4C9041D1E0448A70022084A /* Gestures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gestures@2x.png"; sourceTree = "<group>"; };
 		F4C9041E1E0448A70022084A /* Players.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Players.png; sourceTree = "<group>"; };
 		F4C9041F1E0448A70022084A /* Players@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players@2x.png"; sourceTree = "<group>"; };
-		F4C904381E044C200022084A /* PlayersViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewControllerTableViewController.h; sourceTree = "<group>"; };
-		F4C904391E044C200022084A /* PlayersViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewControllerTableViewController.m; sourceTree = "<group>"; };
+		F4C904381E044C200022084A /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
+		F4C904391E044C200022084A /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
+		F4C9043E1E044E1C0022084A /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		F4C9043F1E044E1C0022084A /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,8 +238,10 @@
 		F4C9043D1E044C4C0022084A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F4C904381E044C200022084A /* PlayersViewControllerTableViewController.h */,
-				F4C904391E044C200022084A /* PlayersViewControllerTableViewController.m */,
+				F4C904381E044C200022084A /* PlayersViewController.h */,
+				F4C904391E044C200022084A /* PlayersViewController.m */,
+				F4C9043E1E044E1C0022084A /* Player.h */,
+				F4C9043F1E044E1C0022084A /* Player.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -401,7 +406,8 @@
 				F4C903DC1E043C570022084A /* ViewController.m in Sources */,
 				F4C903D91E043C570022084A /* AppDelegate.m in Sources */,
 				F4C903D61E043C570022084A /* main.m in Sources */,
-				F4C9043A1E044C200022084A /* PlayersViewControllerTableViewController.m in Sources */,
+				F4C9043A1E044C200022084A /* PlayersViewController.m in Sources */,
+				F4C904401E044E1C0022084A /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,16 +7,55 @@
 //
 
 #import "AppDelegate.h"
+#import "Player.h"
+#import "PlayersViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+{
+    NSMutableArray *_players;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    _players = [NSMutableArray arrayWithCapacity:20];
+    
+    //Initiating a Player
+    Player *player = [[Player alloc] init];
+    player.name = @"Ellie";
+    player.game = @"The Last of Us";
+    player.rating = 5;
+    //Inserting the player on the _players array
+    [_players addObject:player];
+    
+    //Initiating a Player, this time, the player pointer was created already
+    player = [[Player alloc] init];
+    player.name = @"Jhon 'Soap' McTavish";
+    player.game = @"CoD:MW";
+    player.rating = 4;
+    //Inserting the player on the _players array
+    [_players addObject:player];
+    
+    //Initiating a Player
+    player = [[Player alloc] init];
+    player.name = @"Yoshi";
+    player.game = @"Super Mario World";
+    player.rating = 3;
+    //Inserting the player on the _players array
+    [_players addObject:player];
+    
+    //References so the controllers are able to find the players
+    //Tabs acess
+    UITabBarController * tabBarController = (UITabBarController *) self.window.rootViewController;
+    //Then we get the navigator controller inside it
+    UINavigationController *navigationController = [tabBarController viewControllers][0];
+    //And then again, the player view inside the navigator
+    PlayersViewController* playersViewController = [navigationController viewControllers][0];
+    
+    
     return YES;
 }
 
