@@ -54,6 +54,7 @@
     UINavigationController *navigationController = [tabBarController viewControllers][0];
     //And then again, the player view inside the navigator
     PlayersViewController* playersViewController = [navigationController viewControllers][0];
+    playersViewController.players = _players;
     
     
     return YES;
