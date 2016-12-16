@@ -8,6 +8,7 @@
 
 #import "PlayersViewController.h"
 #import "Player.h"
+#import "PlayerCell.h"
 
 @interface PlayersViewController ()
 
@@ -42,7 +43,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
+    PlayerCell * cell = (PlayerCell *)[tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
     
     //For each cell, gets the corresponding player and assing its name and game to title and subtitle
     Player *player = (self.players)[indexPath.row];
